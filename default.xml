@@ -474,5 +474,6 @@
   <project path="tools/studio/translation" name="platform/tools/studio/translation" groups="notdefault,tools" />
   <project path="tools/swt" name="platform/tools/swt" groups="notdefault,tools" />
   <project path="tools/tradefederation" name="platform/tools/tradefederation" groups="notdefault,tradefed" />
-
+  <project path="kernel/moto/shamu" name="platform/kernel/msm" revision="android-msm-shamu-3.10-marshmallow" />
+	
 </manifest>
