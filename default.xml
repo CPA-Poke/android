@@ -11,6 +11,7 @@
            remote="aosp"
            sync-j="4" />
 
+  <project path="android" name="CPA-Poke/android" remote="gh" revision="marshmallow" />
   <project path="build" name="platform/build" groups="pdk" >
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
@@ -29,8 +30,6 @@
   <project path="device/generic/arm64" name="device/generic/arm64" groups="pdk" />
   <project path="device/generic/armv7-a-neon" name="device/generic/armv7-a-neon" groups="pdk" />
   <project path="device/generic/common" name="device/generic/common" groups="pdk" />
-  <project path="device/moto/shamu" name="CPA-Poke/android_device_moto_shamu" remote="gh" revision="marshmallow" />
-  <project path="kernel/moto/shamu" name="kernel/msm" revision="android-msm-shamu-3.10-marshmallow" />
   <project path="device/sample" name="device/sample" groups="pdk" />
   <project path="docs/source.android.com" name="platform/docs/source.android.com" groups="pdk-cw-fs,pdk-fs" />
   <project path="external/aac" name="platform/external/aac" groups="pdk" />
@@ -456,5 +455,10 @@
   <project path="tools/studio/translation" name="platform/tools/studio/translation" groups="notdefault,tools" />
   <project path="tools/swt" name="platform/tools/swt" groups="notdefault,tools" />
   <project path="tools/tradefederation" name="platform/tools/tradefederation" groups="notdefault,tradefed" />
-	
+
+# Shamu Extras
+  <project path="device/moto/shamu" name="CPA-Poke/android_device_moto_shamu" remote="gh" revision="marshmallow" />
+  <project path="kernel/moto/shamu" name="CPA-Poke/android_kernel_moto_shamu" remote="gh" revision="marshmallow" />
+  <project path="vendor/motorola" name="TheMuppets/proprietary_vendor_motorola" remote="gh" revision="cm-13.0" />
+
 </manifest>
